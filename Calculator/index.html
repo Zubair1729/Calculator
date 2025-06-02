@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="table.css">
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th id="menu"> ||| </th>
+                <th id="txt">Standard</th>
+                <th id="img"></th>
+                <th id="recent">Recent</th>
+            </tr>
+            <tr>
+                <td colspan="4"><input type="text" id="disp1" readonly value=""></td>
+            </tr>
+            <tr>
+                <td colspan="4"><input type="text" id="disp2" readonly value="0"></td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <div class="disp-btn calc-btn">
+                        <button class="b1">MSC</button>
+                        <button class=" b1">MR</button>
+                        <button class="">M+</button>
+                        <button class="">M-</button>
+                        <button class="">MS</button>
+                        <button class=" b1">M<select id="s" disabled></select></button>
+                    </div>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="4">
+                    <div class="disp-btn2">
+                        <button>%</button>
+                        <button onclick="CE()">CE</button>
+                        <button onclick="remove()">C</button>
+                        <button onclick="del()">del</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <div class="disp-btn2">
+                        <button><i>1/x</i></button>
+                        <button><i>x</i><sup>2</sup></button>
+                        <button><sup>2</sup>&radic;<i>x</i></button>
+                        <button onclick="opeArr('/')">&divide;</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <div class="disp-btn2">
+                        <button onclick="numChange(7)">7</button>
+                        <button onclick="numChange(8)">8</button>
+                        <button onclick="numChange(9)">9</button>
+                        <button onclick="opeArr('*')">&times;</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <div class="disp-btn2">
+                        <button onclick="numChange(4)">4</button>
+                        <button onclick="numChange(5)">5</button>
+                        <button onclick="numChange(6)">6</button>
+                        <button onclick="opeArr('-')">-</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <div class="disp-btn2">
+                        <button onclick="numChange(1)">1</button>
+                        <button onclick="numChange(2)">2</button>
+                        <button onclick="numChange(3)">3</button>
+                        <button onclick="opeArr('+')">+</button>
+                    </div>
+                </td>
+            </tr>
+
+            </td>
+            <tr>
+                <td colspan="4">
+                    <div class="disp-btn2">
+                        <button>+/-</button>
+                        <button onclick="numChange(0)">0</button>
+                        <button>.</button>
+                        <span id="btn-eql">
+                            <button onclick="Calculate('=')">=</button>
+                        </span>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
